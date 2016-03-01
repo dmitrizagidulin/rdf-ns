@@ -19,7 +19,8 @@ var seeAlso = Vocab.rdfs.seeAlso
 Do:
 
 ```javascript
-var rdfs = Namespace('http://www.w3.org/2000/01/rdf-schema#')
+var ns = require('rdf-ns')
+var rdfs = ns('http://www.w3.org/2000/01/rdf-schema#')
 
 var seeAlso = rdfs('seeAlso')
 var subClassOf = rdfs('subClassOf')  // resolves to plain strings
