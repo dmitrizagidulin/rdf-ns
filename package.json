@@ -1,0 +1,22 @@
+{
+  "name": "rdf-ns",
+  "version": "0.0.1",
+  "description": "Simple helper object for referencing RDF namespaces, library-independent. Inspired by RDFLib.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrizagidulin/rdf-ns.git"
+  },
+  "keywords": [
+    "rdf"
+  ],
+  "author": "Dmitri Zagidulin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrizagidulin/rdf-ns/issues"
+  },
+  "homepage": "https://github.com/dmitrizagidulin/rdf-ns"
+}
