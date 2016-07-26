@@ -1,6 +1,6 @@
 {
   "name": "rdf-ns",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Simple helper object for referencing RDF namespaces, library-independent. Inspired by RDFLib.js.",
   "main": "index.js",
   "scripts": {
