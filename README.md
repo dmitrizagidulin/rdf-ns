@@ -18,12 +18,24 @@ var seeAlso = Vocab.rdfs.seeAlso
 
 Do:
 
-```javascript
-var ns = require('rdf-ns')
-var rdfs = ns('http://www.w3.org/2000/01/rdf-schema#')
+```js
+var ns = require('rdf-ns')()
+var rdfs = ns.base('http://www.w3.org/2000/01/rdf-schema#')
 
 var seeAlso = rdfs('seeAlso')
-var subClassOf = rdfs('subClassOf')  // resolves to plain strings
 
 console.log(seeAlso)  // -> 'http://www.w3.org/2000/01/rdf-schema#seeAlso'
+```
+
+You can also inject an RDF library, and get back `NamedNode` instances.
+
+```js
+var rdf = require('rdflib')
+var ns = require('rdf-ns')(rdf)
+var rdfs = ns.base('http://www.w3.org/2000/01/rdf-schema#')
+
+var seeAlso = rdfs('seeAlso')
+
+console.log(seeAlso)  
+// -> NamedNode(<http://www.w3.org/2000/01/rdf-schema#seeAlso>)
 ```
