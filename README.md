@@ -1,5 +1,7 @@
 ## RDF Namespace
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dmitrizagidulin/rdf-ns.svg)](https://greenkeeper.io/)
+
 Simple helper object for referencing RDF namespaces, library-independent.
 Inspired by [RDFLib.js](https://github.com/linkeddata/rdflib.js/).
 
